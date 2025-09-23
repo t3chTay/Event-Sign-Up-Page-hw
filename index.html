@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Sign-Up Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <img src="images3/logo_3.png" alt="BloxMusic Fest Logo" />
-        <a href="">Passes</a>
-        <a href="">Lineup</a>
-        <a href="">Membership Perks</a>
-        <a href="">FAQs</a>
+      
+        <img src="images3/logo_3.png" class="img-logo" alt="BloxMusic Fest Logo" /> 
+      <nav class="nav">
+          <a href="">Passes</a>
+          <a href="">Lineup</a>
+          <a href="">Membership Perks</a>
+          <a href="">FAQs</a>
       </nav>
     </header>
 
@@ -21,7 +22,7 @@
       <!-- main content of the page -->
       <section>
         <h1>BloxMusic Fest!</h1>
-        <img src="images3/concert1unsplash.jpg" alt="Concert snapshot" />
+        <img src="images3/concert1unsplash.jpg" class="img-1" alt="Concert snapshot" />
         <h2>Weekend 3 Tickets Are Available Now</h2>
         <p>
           Don't miss out on the music event of the year! Join us for an
@@ -38,11 +39,87 @@
           sign up for our membership.
         </p>
 
-        <div>
-          <a href="signup.html"> <button>Sign Up</button></a>
-          <a href="login.html"> <button>Login</button></a>
+        <div class="btns">
+          <a href="#signup-form"> <button>Sign Up</button></a>
         </div>
       </section>
+    <section>
+      <h3>Weekend 3 Lineup</h3>
+      <img src="images3/lineup.png" class="img-2" alt="Lineup details" />
+    </section>
+     
+    <form id="signup-form" action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="first name">First Name:</label>
+                <input type="text" id="first name" required><br>
+                
+                <label for="last name">Last Name:</label>
+                <input type="text" id="last name" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="youremail@email.com"required><br>
+               
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username" required><br>
+               
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="At least 8 characters" required><br
+               
+                <label for="confirm password"> Confirm Password:</label>
+                <input type="password" id="confirm password" placeholder="Confirm Password" required><br
+            
+                <label for="phone number">Phone Number:</label>
+                <input type="tel" id="phone number" placeholder="(123) 456 -7890" optional>(optional)<br>
+                
+                <label for="date of birth">Date of Birth</label>
+                <input type="date" id="date of birth" required><br>
+                </fieldset>
+            <fieldset>
+                <legend>Event Tickets</legend>
+                <label for="ticket type">Ticket Type:</label><br>
+                <checked id="ticket type" required>
+                    <input type="radio" id="general admission" name="ticket type"> Full General Admission </option>
+                    <input type="number" id="number of tickets" name="number of tickets" min="1" max="10" required><br>
+                    
+                    <input type="radio" id="vip membership" name="ticket type"> Full VIP Membership</option>
+                    <input type="number" id="number of tickets" name="number of tickets" min="1" max="10" required><br>
+                    
+                    <input type="radio" name="student admission" name="ticket type"> Full Student Admission</option>
+                    <input type="number" id="number of tickets" name="number of tickets" min="1" max="10" required><br>
+                    
+                    <input type="radio" id="single day general" name="ticket type"> Single Day General Admission</option>
+                    <input type="number" id="number of tickets" name="number of tickets" min="1" max="10" required><br>
+                    
+                    <input type="radio" id="single day vip" name="ticket type"> Single Day VIP Admission</option>
+                    <input type="number" id="number of tickets" name="number of tickets" min="1" max="10" required><br>
+                    
+                    <input type="radio" id="single day student" name="ticket type"> Single Day Student Admission</option>
+                    <input type="number" id="number of tickets" name="number of tickets" min="1" max="10"required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="special requests">Special Requests:</label>
+                <textarea id="special requests" name="special requests" rows="4" cols="50" placeholder="Please enter any special requests or accommodations here..."></textarea><br>
+                
+                <label for="terms">
+                    <input type="checkbox" id="terms" required>
+                    I agree to the terms and conditions.
+                </label><br>
+                </fieldset>
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter">
+                    Subscribe to our newsletter for updates and promotions. (optional)
+                </label><br>
+
+
+            </fieldset>
+
+            <div>
+                <button type="submit">Register for Event</button>
+                <button type="reset">Reset</button>
+        </form>
     </main>
 
     <!-- footer -->
