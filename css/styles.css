@@ -78,7 +78,7 @@ p{
     margin-top: 20px;
 }
 button{
-    background-color: rgb(181, 194, 209);
+    background-color: rgba(243, 162, 21, 0.569);
     border: 2px solid rgba(77, 74, 74, 0.979);
     border-radius: 5px;
     font-size: 20px;
@@ -115,13 +115,34 @@ h4{
     margin-bottom: 30px;
 }
 
+
 #signup-form{
     width: 80%;
     font-size: 25px;
-    row-gap: 5px;
-   
+    padding: 0 30px;
+    
 }
+legend{
+    padding: 20px 0px;
+    font-weight: bold; 
+    font-size: 35px;   
+}
+
 fieldset{
-    border: none;
+    border: 3px solid black;
     margin-bottom: 50px;
+    padding: 30px;
+}
+
+h5{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(20, 46, 68);
+    margin-bottom: 40px;
+    margin-top: 250px;
+}
+
+h6{
+    font-size: 25px;
+    font-weight: 500;
 }
